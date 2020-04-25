@@ -50,6 +50,7 @@ public class PicController {
         File file = new File(realPath + "/" + datePath);
         if(!file.exists()){
             file.mkdirs();
+            System.out.println("年号");
         }
         try {
             fileName.transferTo(new File(file,newName));
