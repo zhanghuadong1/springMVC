@@ -54,6 +54,7 @@ public class PicController {
         try {
             fileName.transferTo(new File(file,newName));
             return "success";
+            System.out.println("sdfsdfsdf");
         } catch (IOException e) {
             e.printStackTrace();
             return "error";
